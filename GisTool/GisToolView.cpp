@@ -12,6 +12,7 @@
 
 #include "GisToolDoc.h"
 #include "GisToolView.h"
+#include "DlgShpReadAndWrite.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -29,6 +30,7 @@ BEGIN_MESSAGE_MAP(CGisToolView, CView)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CGisToolView::OnFilePrintPreview)
 	ON_WM_CONTEXTMENU()
 	ON_WM_RBUTTONUP()
+	ON_COMMAND(ID_TOOL_SHAPEFILE, &CGisToolView::OnToolShapefile)
 END_MESSAGE_MAP()
 
 // CGisToolView construction/destruction
@@ -126,3 +128,13 @@ CGisToolDoc* CGisToolView::GetDocument() const // non-debug version is inline
 
 
 // CGisToolView message handlers
+
+//shpÎÄ¼þ¶ÁÐ´
+void CGisToolView::OnToolShapefile()
+{
+	DlgShpReadAndWrite dlg;
+	if (dlg.DoModal() == IDOK)
+	{
+
+	}
+}
