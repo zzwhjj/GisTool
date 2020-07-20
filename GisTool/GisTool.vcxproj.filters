@@ -16,6 +16,9 @@
     <Filter Include="shapelib">
       <UniqueIdentifier>{f628d63b-ceb6-4621-ad7d-7429a904883f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ShapeFile">
+      <UniqueIdentifier>{0163b1ca-2649-4f88-95c8-36c553c85b40}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GisTool.h">
@@ -63,6 +66,12 @@
     <ClInclude Include="DlgShpReadAndWrite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ShapeFile\ShapeFileRead.h">
+      <Filter>ShapeFile</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeFile\ShapeFileWrite.h">
+      <Filter>ShapeFile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GisTool.cpp">
@@ -97,6 +106,24 @@
     </ClCompile>
     <ClCompile Include="DlgShpReadAndWrite.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFile\ShapeFileRead.cpp">
+      <Filter>ShapeFile</Filter>
+    </ClCompile>
+    <ClCompile Include="shapelib\dbfopen.c">
+      <Filter>shapelib</Filter>
+    </ClCompile>
+    <ClCompile Include="shapelib\safileio.c">
+      <Filter>shapelib</Filter>
+    </ClCompile>
+    <ClCompile Include="shapelib\shpopen.c">
+      <Filter>shapelib</Filter>
+    </ClCompile>
+    <ClCompile Include="shapelib\shptree.c">
+      <Filter>shapelib</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeFile\ShapeFileWrite.cpp">
+      <Filter>ShapeFile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

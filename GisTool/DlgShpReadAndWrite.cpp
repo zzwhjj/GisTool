@@ -5,7 +5,7 @@
 #include "GisTool.h"
 #include "DlgShpReadAndWrite.h"
 #include "afxdialogex.h"
-
+#include ".\ShapeFile\ShapeFileRead.h"
 
 // DlgShpReadAndWrite dialog
 
@@ -52,6 +52,8 @@ void DlgShpReadAndWrite::OnBnClickedBtnInputFile()
 
 void DlgShpReadAndWrite::OnBnClickedOk()
 {
-	// TODO: Add your control notification handler code here
+	ShapeFileRead read;
+	read.ReadShp(m_strShpPathName.GetBuffer());
+
 	CDialogEx::OnOK();
 }

@@ -204,6 +204,8 @@
 #include <ctype.h>
 #include <string.h>
 
+#pragma warning(disable:4996)
+
 #ifdef USE_CPL
 #include "cpl_string.h"
 #else

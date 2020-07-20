@@ -23,4 +23,5 @@ protected:
 public:
 	CString m_strShpPathName;
 	afx_msg void OnBnClickedBtnInputFile();
+	afx_msg void OnBnClickedOk();
 };
