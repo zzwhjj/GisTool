@@ -21,7 +21,8 @@ void ShapeFileRead::ReadShp(const std::string &strShpPathName)
 	double* minB = new double[4];
 	double* maxB = new double[4];
 	SHPGetInfo(hShp, &nEntities, &nShapeType, minB, maxB);
-	printf("ShapeType:%d\n", nShapeType);
+
+	OutputDebugString("ShapeType:%d\n", nShapeType);
 	printf("Entities:%d\n", nEntities);
 	
 	for (int i = 0; i < nEntities; i++)

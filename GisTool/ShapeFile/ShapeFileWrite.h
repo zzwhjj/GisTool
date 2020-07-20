@@ -1,7 +1,7 @@
 /**
  * 说明：shp文件写入
  * date: 2020-07-21
- * author: zhangzw
+ * author: zzw
  */
 #ifndef _SHAPEFILEWRITE_H
 #define _SHAPEFILEWRITE_H

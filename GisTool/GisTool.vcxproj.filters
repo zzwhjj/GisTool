@@ -19,6 +19,12 @@
     <Filter Include="ShapeFile">
       <UniqueIdentifier>{0163b1ca-2649-4f88-95c8-36c553c85b40}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{0a7f24da-1e2d-4f1f-8d9c-ef7e08e447e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GIS">
+      <UniqueIdentifier>{38e2e705-7cbe-47c4-8115-5a81f149d572}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GisTool.h">
@@ -72,6 +78,12 @@
     <ClInclude Include="ShapeFile\ShapeFileWrite.h">
       <Filter>ShapeFile</Filter>
     </ClInclude>
+    <ClInclude Include="Common\CommonDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\CommonFunc.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GisTool.cpp">
@@ -124,6 +136,9 @@
     </ClCompile>
     <ClCompile Include="ShapeFile\ShapeFileWrite.cpp">
       <Filter>ShapeFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\CommonFunc.cpp">
+      <Filter>Common</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

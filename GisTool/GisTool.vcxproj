@@ -184,6 +184,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ClassView.h" />
+    <ClInclude Include="Common\CommonDef.h" />
+    <ClInclude Include="Common\CommonFunc.h" />
     <ClInclude Include="DlgShpReadAndWrite.h" />
     <ClInclude Include="FileView.h" />
     <ClInclude Include="framework.h" />
@@ -203,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="Common\CommonFunc.cpp" />
     <ClCompile Include="DlgShpReadAndWrite.cpp" />
     <ClCompile Include="FileView.cpp" />
     <ClCompile Include="GisTool.cpp" />

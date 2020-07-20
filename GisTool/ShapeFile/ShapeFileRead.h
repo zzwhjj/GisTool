@@ -1,7 +1,7 @@
 /**
  * 说明：shp文件读取
  * date: 2020-07-21
- * author: zhangzw
+ * author: zzw
  */
 #ifndef _SHAPEFILEREAD_H
 #define _SHAPEFILEREAD_H
