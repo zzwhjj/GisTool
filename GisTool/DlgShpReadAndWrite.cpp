@@ -37,6 +37,20 @@ END_MESSAGE_MAP()
 
 // DlgShpReadAndWrite message handlers
 
+BOOL DlgShpReadAndWrite::OnInitDialog()
+{
+	CDialogEx::OnInitDialog();
+
+	// TODO:  在此添加额外的初始化
+
+	m_strShpPathName = "G:\\work\\GisTool\\bin\\data\\shp\\HighRoad.shp";
+
+	UpdateData(FALSE);
+
+	return TRUE;  // return TRUE unless you set the focus to a control
+				  // 异常: OCX 属性页应返回 FALSE
+}
+
 //选择shp文件
 void DlgShpReadAndWrite::OnBnClickedBtnInputFile()
 {
@@ -57,3 +71,5 @@ void DlgShpReadAndWrite::OnBnClickedOk()
 
 	CDialogEx::OnOK();
 }
+
+

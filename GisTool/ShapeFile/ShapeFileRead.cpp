@@ -21,26 +21,18 @@ void ShapeFileRead::ReadShp(const std::string &strShpPathName)
 	double* minB = new double[4];
 	double* maxB = new double[4];
 	SHPGetInfo(hShp, &nEntities, &nShapeType, minB, maxB);
-
-	OutputDebugString("ShapeType:%d\n", nShapeType);
-	printf("Entities:%d\n", nEntities);
 	
 	for (int i = 0; i < nEntities; i++)
 	{
 		int iShape = i;
 		SHPObject* obj = SHPReadObject(hShp, iShape);
-		printf("--------------Feature:%d------------\n", iShape);
 		int parts = obj->nParts;
 		int verts = obj->nVertices;
-		printf("nParts:%d\n", parts);
-		printf("nVertices:%d\n", verts);
 		for (int i = 0; i < verts; i++)
 		{
 			double x = obj->padfX[i];
 			double y = obj->padfY[i];
-			printf("%f,%f;", x, y);
 		}
-		printf("\n");
 	}
 	SHPClose(hShp);
 }
